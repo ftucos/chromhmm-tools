@@ -64,9 +64,9 @@ GENERAL WORKFLOW
 
     * Write a config file
         (see above for format; here called `config.txt`)
-    * `chromhmm-signalize.py config.txt hg19`
+    * `chromhmm-signalize.py rebin config.txt hg19`
         (see `binned` dir for output by default)
-    * `chromhmm-signalize.py config.txt binned`
+    * `chromhmm-signalize.py combine config.txt binned`
         (see `signal` dir for output by default)
     * `java -jar -xm4000M ChromHMM.jar BinarizeSignal signal binarized`
         (see `binarized` for output)
