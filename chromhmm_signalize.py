@@ -157,7 +157,7 @@ def rebin(configfile, genome, binsize=200, quiet=False, binned_dir='binned'):
             bg = path + '.bedgraph'
             if not os.path.exists(bg):
                 logger.info('converting to bedgraph')
-                os.system('bigWigToBedGraph %s %s' % (path, bg))
+                os.system('bigWigToBedGraph "%s" "%s"' % (path, bg))
             else:
                 logger.info('%s already exists, using it' % bg)
         else:
