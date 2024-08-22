@@ -182,7 +182,7 @@ def rebin(configfile, genome, binsize=200, quiet=False, binned_dir='binned'):
             fout = open(filename, 'w')
             fout.write('%s\t%s\n' % (celltype, chrom))
             fout.write('%s\n' % mark)
-            for xii, yii in itertools.izip(xi, yi):
+            for xii, yii in zip(xi, yi):
                 fout.write('%s\n' % yii)
             fout.close()
 
@@ -268,7 +268,7 @@ def combine(configfile, binned_dir='binned', binsize=200,
         final = open(filename, 'w')
         final.write('%s\t%s\n' % (celltype, chrom))
         final.write('\t'.join(marks) + '\n')
-        for values in itertools.izip(*open_files):
+        for values in zip(*open_files):
             values = [v.strip() for v in values]
             final.write('\t'.join(values) + '\n')
         final.close()
