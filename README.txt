@@ -68,8 +68,8 @@ GENERAL WORKFLOW
         (see `binned` dir for output by default)
     * `chromhmm-signalize.py config.txt binned`
         (see `signal` dir for output by default)
-    * `java -jar -xm4000M ChromHMM.jar BinarizeSignal signal binarized`
+    * `java -jar -mx4000M ChromHMM.jar BinarizeSignal signal binarized`
         (see `binarized` for output)
-    * `java -jar -xm4000M ChromHMM.jar LearnModel binarized output 9 hg19`
+    * `java -jar -mx4000M ChromHMM.jar LearnModel binarized output 9 hg19`
         (see `output` for 9-state model results)
 
